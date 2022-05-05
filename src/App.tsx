@@ -1,11 +1,14 @@
+import { Provider } from 'react-redux';
 import Counter from './components/counter';
 import GlobalStyle from './styles/global';
-
+import store from './store';
 const App: React.FC = () => (
   <>
-    <GlobalStyle>
-      <Counter />
-    </GlobalStyle>
+    <Provider store={store}>
+      <GlobalStyle>
+        <Counter />
+      </GlobalStyle>
+    </Provider>
   </>
 );
 
