@@ -22,7 +22,7 @@ export const Button = styled.button`
   border-radius: 15px;
   border: none;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px !important;
   font-weight: bold;
 `;
 export const CounterValue = styled.div`
